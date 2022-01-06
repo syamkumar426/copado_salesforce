@@ -6,7 +6,7 @@
         //default-200
 public class TestDemoBatch1 implements Database.Batchable<sobject>{
     public Database.QueryLocator start(Database.BatchableContext bc){
-        //1 million ...2000 records to execute
+        //1 million ...10000000 records to execute
         return Database.getQueryLocator('SELECT id,lastname from Contact'); //it will not run even don't have 1million records
             }
     public void execute(Database.BatchableContext bc,List<contact> contactList){

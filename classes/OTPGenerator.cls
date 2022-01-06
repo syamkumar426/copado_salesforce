@@ -6,7 +6,7 @@ public class OTPGenerator implements Process.Plugin {
         result.put('OTP', otp);
         return new Process.PluginResult(result);
     }
- 
+ //test
     public Process.PluginDescribeResult describe() {
         Process.PluginDescribeResult result = new Process.PluginDescribeResult();
         result.description = 'This plug-in generates a radnom 6-digits code';
